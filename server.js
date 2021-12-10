@@ -30,7 +30,7 @@ var server = http.createServer(function(request, response){
         '.css':'text/css',
         '.js':'text/javascript',
         '.jpg':'image/jpg',
-        './png':'image/png'
+        '.png':'image/png'
     }
     response.setHeader('Content-Type',
      `${fileTypes[suffix] || 'text.html'} ;charset=utf-8`)
